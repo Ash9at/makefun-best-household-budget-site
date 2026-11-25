@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearthly — Household Budget</title>
+<meta name="description" content="Hearthly is a calm household budget site: a live dashboard, a working ledger, category budgets, savings goals and a bills list, all in your browser.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/"><span class="brand-mark">H</span> Hearthly</a>
+    <nav class="main-nav" aria-label="Main">
+      <a class="nav-link" href="#/">Dashboard</a>
+      <a class="nav-link" href="#/ledger">Ledger</a>
+      <a class="nav-link" href="#/budgets">Budgets</a>
+      <a class="nav-link" href="#/goals">Goals</a>
+      <a class="nav-link" href="#/bills">Bills</a>
+    </nav>
+    <div class="header-tools">
+      <label class="currency-label">Currency
+        <select id="currency-select" aria-label="Display currency">
+          <option value="USD">USD $</option>
+          <option value="JPY">JPY ¥</option>
+          <option value="EUR">EUR €</option>
+        </select>
+      </label>
+      <button type="button" id="reset-data" class="mini-btn">Reset sample data</button>
+    </div>
+  </div>
+</header>
+<main id="app" class="page"></main>
+<footer class="site-footer">
+  <p><strong>Hearthly</strong> — a household budget that lives entirely in your browser. No account, no uploads: your entries stay on this device.</p>
+  <p class="small-note">Sample household shown on first load. Add, edit and delete entries in the ledger and every total, chart and budget on the site updates to match.</p>
+</footer>
+</body>
+</html>
